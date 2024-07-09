@@ -1,0 +1,74 @@
+site:
+  name: Merge Docs Pro
+  site: 'https://www.mergedocs.pro'
+  base: '/'
+  ## Do not change the trailslash to False. Because, the previous wordpress site had the ending slash and all the URLS indexed in Google were including slash. 
+  ## Astro sites doesn't automatically redirect the urls without trailslash to with trail slash.. If changed to false, then the urls will show 404
+  trailingSlash: true
+
+  googleSiteVerificationId: 
+
+# Default SEO metadata
+metadata:
+  title:
+    default: Merge Google Docs
+    template: '%s'
+  description: "Merge Google Docs, Merge Multiple Google Docs into One"
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: Merge Docs Pro
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+  twitter:
+    handle: '@vikramaruchamy'
+    site: '@vikramaruchamy'
+    cardType: summary_large_image
+
+i18n:
+  language: en
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: true
+    postsPerPage: 6
+
+    post:
+      isEnabled: true
+      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      robots:
+        index: true
+
+    list:
+      isEnabled: true
+      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      robots:
+        index: false
+
+    category:
+      isEnabled: true
+      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      robots:
+        index: false
+
+    tag:
+      isEnabled: true
+      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      robots:
+        index: false
+
+    isRelatedPostsEnabled: false
+    relatedPostsCount: 4
+
+analytics:
+  vendors:
+    googleAnalytics:
+      id: "G-Y7HTF21PXY" # or "G-XXXXXXXXXX"
+
+ui:
+  theme: 'light' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

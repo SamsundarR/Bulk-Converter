@@ -1,0 +1,540 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .bg-page {
+        background-color: var(--aw-color-bg-page);
+    }
+
+    .bg-dark {
+        background-color: var(--aw-color-bg-page-dark);
+    }
+
+    .bg-light {
+        background-color: var(--aw-color-bg-page);
+    }
+
+    .text-page {
+        color: var(--aw-color-text-page);
+    }
+
+    .text-muted {
+        color: var(--aw-color-text-muted);
+    }
+}
+.prose pre {
+    @apply bg-gray-100 text-slate-800 p-4 rounded overflow-auto !important;
+  }
+  
+@layer components {
+    .btn {
+        @apply inline-flex items-center justify-center rounded-full border-gray-400 border bg-transparent font-medium text-center text-base text-page leading-snug transition py-3.5 px-6 md:px-8 ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2 hover:bg-gray-100 hover:border-gray-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800 cursor-pointer;
+    }
+
+    .btn-primary {
+        @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+    }
+
+    .btn-secondary {
+        @apply btn;
+    }
+
+    .btn-tertiary {
+        @apply btn border-none shadow-none text-muted hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
+    }
+}
+
+#header.scroll>div:first-child {
+    @apply bg-page md:bg-white/90 md:backdrop-blur-md;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);
+}
+
+.dark #header.scroll>div:first-child,
+#header.scroll.dark>div:first-child {
+    @apply bg-page md:bg-[#030621e6] border-b border-gray-500/20;
+    box-shadow: none;
+}
+
+/* #header.scroll > div:last-child {
+  @apply py-3;
+} */
+
+#header.expanded nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 70px !important;
+    padding: 0 5px;
+}
+
+.dropdown:focus .dropdown-menu,
+.dropdown:focus-within .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+[astro-icon].icon-light>* {
+    stroke-width: 1.2;
+}
+
+[astro-icon].icon-bold>* {
+    stroke-width: 2.4;
+}
+
+[data-aw-toggle-menu] path {
+    @apply transition;
+}
+
+[data-aw-toggle-menu].expanded g>path:first-child {
+    @apply -rotate-45 translate-y-[15px] translate-x-[-3px];
+}
+
+[data-aw-toggle-menu].expanded g>path:last-child {
+    @apply rotate-45 translate-y-[-8px] translate-x-[14px];
+}
+
+
+.bg-primary {
+    background-color: #2772ed;
+}
+
+.primary-colour-text {
+    color: #2772ed;
+}
+
+  
+/*Home page hero list - Steps*/
+
+.hero-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.hero-list li {
+    margin-bottom: 30px;
+}
+
+
+/*Home page Grid icon CSS*/
+
+body .home-icons-grid {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0 15px;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 13px;
+    flex-wrap: wrap;
+    margin-top: 80px;
+   
+}
+
+/*This is for larger screens*/
+@media (min-width: 901px) {
+    .home-icons-grid {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    /* Four items in a row for larger screens */
+    .home-grid-item {
+        flex-basis: 8% !important;
+    }
+}
+/*This is for small screens*/
+@media(max-width: 900px) {
+    body .home-icons-grid {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .home-grid-item {
+        flex-basis: 25%;
+    }
+}
+
+
+
+.home-grid-item {
+
+    font-size: 15px;
+    line-height: 1.2;
+
+    display: flex;
+    /* Use flexbox */
+    flex-basis: 9%;
+    flex-direction: column;
+    /* Arrange content in a column */
+    align-items: center;
+    /* Center items horizontally */
+    opacity: 0;
+    /* Set initial opacity */
+    transform: scale(0);
+    /* Set initial scale */
+    animation: fadeInScale 1s ease-in-out 0.1s forwards;
+
+
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.home-grid-item i,
+.home-grid-item img {
+    border-radius: 30%;
+    padding: 10px;
+    background-color: #1f5bbd;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: white;
+    /* Adjust top margin for alignment */
+}
+
+.home-grid-item p {
+    margin: 10px 0;
+    /* Add vertical margin */
+    display: block;
+    /* Ensure the text displays as a block element */
+    overflow: visible;
+    /* Show the full text content */
+    color: white;
+    text-overflow: ellipsis;
+    /* Add an ellipsis for text overflow if necessary */
+    white-space: normal;
+    /* Allow text to wrap */
+    word-wrap: break-word;
+}
+
+/*Ends home page icons grid*/
+
+/*css for home page before and after gdocs to md */
+/*Home page Comparison  before and after docs to md */
+.compare-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .section-container {
+    flex-basis: 50%;
+    padding: 5px;
+		
+  }
+
+.compare-section-border {
+  border-right: 1px solid #ccc;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.custom-list-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 5px;
+  width: 350px; /* Default width */
+  font-size: 20px;
+}
+    .compare-container h2,
+.compare-container ul {
+      text-align: center;
+      margin: 10px; 
+			 list-style: None;
+      padding: 2; 
+	position: relative;
+	 display: flex;
+      flex-direction: column;
+    }
+
+.custom-list-item::before {
+  content: '\2713'; /* Use checkmark symbol as list marker */
+  padding-right: 5px; /* Add some space between marker and text */
+}
+
+
+.expand-item {
+       height: 530px;
+       display: flex;
+      flex-direction: column;
+      align-items: center;
+			justify-content: center;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+       background-color: rgb(240 253 244);
+			border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+			padding: 10px;
+  margin: 5px;
+  width: 350px;
+    }
+     
+.my-svg-icon-bottom {
+      margin-bottom: 15px;
+      margin-top: 5px;
+    }
+
+.my-svg-icon-top {
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+@media screen and (max-width: 768px) {
+  .custom-list-item {
+      width: calc(50% - 20px);
+    }
+
+    .expand-item {
+      height: auto; /* Adjust height to fit content */
+      width: calc(100% - 20px);
+    }
+	.section-container {
+      flex-basis: 100%;
+    }
+	
+	.compare-section-border {
+     border-bottom: 1px solid #ccc;
+		border-right: none;
+  }
+}
+
+/*end Comparison Before and After docs to Md ends*/
+
+
+/*end css for home page before and after gdocs to md */
+
+/*CSS for Online Converter Tools*/
+
+.twocols {
+    display: flex;
+    position: relative;
+  }
+  
+  .twocols .input-field {
+    flex: 1; /* This will make both elements take up equal space */
+    margin-right: 10px; /* Adjust margin between the elements */
+    height:600px;
+    background-color: #f4f4f4; /* Set background color to white */
+    border: 1px solid #ccc; /* Add a 1px solid border with color #ccc */
+    border-radius: 4px; /* Add border-radius for rounded corners */
+    padding: 6px 10px; /* Add padding to match default textarea */
+    resize: vertical; /* Allow vertical resizing like a textarea */
+    overflow-y: auto; /* Add scrollbars if content overflows vertically */
+    position: relative;
+  
+  }
+  .twocols .editor-container {
+      height: 600px;
+      position: relative;
+      border: 1px solid lightgray;
+  }
+  
+  .twocols .right-editor-placeholder {
+      color: #888;
+      font-size: 22px;
+      font-weight: bold;
+      opacity: 0.5;
+      padding: 0 1em;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(50%, -50%);
+      padding: 10px;
+      pointer-events: none;
+      z-index: 1;
+  }
+  
+  .div-instructions {
+    color: #888;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 0 1em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  
+  .text-left-instructions {
+    color: #888;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 0 1em;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  
+  .text-right-instructions {
+    color: #888;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 0 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .text-instructions {
+    color: #888;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.5;
+    padding: 0 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  
+  .output-container {
+    position: relative;
+  }
+  
+  .twocols .input-field:first-child {
+    margin-left: 50px; /* Remove margin for the last element to avoid extra space */
+      
+   margin-bottom: 10px;
+  }
+  
+  .twocols .input-field:last-child {
+    margin-right: 50px; /* Remove margin for the last element to avoid extra space */
+  margin-bottom: 10px;
+  }
+  
+  .twocols .with-right-margin{
+      margin-right: 50px; /* Remove margin for the last element to avoid extra space */
+      margin-bottom: 10px;	
+  }
+  
+  .twocols .with-left-margin{
+      margin-right: 50px; /* Remove margin for the last element to avoid extra space */
+      margin-bottom: 10px;	
+  }
+  
+  .twocols  .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #999; /* Adjust color as needed */
+      pointer-events: none; /* This prevents the message from interfering with input */
+  }
+  
+  .initial-text {
+      text-align: center; /* Center the text horizontally */
+      color: #999; /* Adjust color as needed */
+  }
+  .tool-button-container{
+       margin-right: 50px;
+  }
+  .tool-styled-button {
+      background-color: #f0f0f0; /* Green - 0F9D58 */
+      border: none;
+      color: black;
+      padding: 10px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition-duration: 0.4s;
+  }
+  
+  .tool-styled-button:hover {
+      background-color: #2772ed; /* Darker Green 45a049*/
+  }
+  
+  .tool-styled-button:active {
+      background-color: #f0f0f0; /* Set your new background color here */
+  }
+  .copy-tooltip {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .div-instructions,
+    .text-left-instructions {
+      left: 0; font-size: 18px;
+    }
+    
+    .text-right-instructions {
+      left: 100%;
+      transform: translateX(-100%);
+         font-size: 18px;
+    }
+    .tool-styled-button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .div-instructions,
+    .text-left-instructions,
+    .text-right-instructions,
+    .text-instructions {
+      font-size: 14px;
+    }
+    
+    .tool-styled-button {
+      font-size: 10px;
+      padding: 6px 10px;
+    }	
+  }
+  
+/*END CSS for online converter tools*/
+
+
+
+/* To deprecated */
+
+.dd *:first-child {
+    margin-top: 0;
+}

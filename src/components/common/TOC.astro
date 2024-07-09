@@ -1,0 +1,12 @@
+---
+export type Props = {
+    headings : Array<{depth:number,text: string; slug: string }>
+}
+
+const { headings } = Astro.props;
+---
+<aside id="#toc">
+    <ul>{headings.map(h => {
+        return <li> <a href={`#${h.slug}`}>{h.text}</a></li>
+    })}</ul>
+</aside>

@@ -1,0 +1,396 @@
+---
+import Layout from "~/layouts/PageLayout.astro";
+
+import FAQs from "~/components/widgets/FAQs.astro";
+
+import MergeDocsHero from "../components/landing/MergeDocsHero.astro";
+import GCPPartnerSection from "~/components/common/GCPPartnerSection.astro";
+
+const metadata = {
+  title: "Merge Google Docs",
+  ignoreTitleTemplate: true,
+  description: "Merge Google Docs, Merge Multiple Google Docs into One",
+};
+---
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+/>
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+  <MergeDocsHero />
+
+  <div class="bg-white py-24 sm:py-32" style="width:100%">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-blue-600">
+          Streamline your workflow and Save your time
+        </h2>
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          Everything you need to Merge Multiple Google Docs, powered by Gemini
+        </p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">
+          Write modularly, merge like a Pro
+        </p>
+      </div>
+
+      <div class="mx-auto mt-16 max-w-4xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl
+          class="grid max-w-xxl grid-cols-1 gap-x-8 gap-y-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16"
+        >
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 448 512"
+                  width="14"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"
+                    fill="#ffffff"></path></svg
+                >
+              </div>
+              Safe and Secure
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Your documents are never uploaded to our servers. Merging happens
+              entirely within your Google account, ensuring your data privacy.
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  ><path
+                    fill="#ffffff"
+                    d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"
+                  ></path></svg
+                >
+              </div>
+              Gemini Powered
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              The app is integrated with Gemini. The possiblities are endless
+              with Gemini. <br /><br />Use a Gemini prompt to automatically
+              generate content for missing chapters/documents, alongside merging
+              your existing Google Docs. This ensures a complete document even
+              if some sections/documents are unavailable.
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M120 0c13.3 0 24 10.7 24 24v8h40V24c0-13.3 10.7-24 24-24s24 10.7 24 24v8h48V24c0-13.3 10.7-24 24-24s24 10.7 24 24v8h40V24c0-13.3 10.7-24 24-24s24 10.7 24 24v8V64v64c17.7 0 32 14.3 32 32v64c17.7 0 32 14.3 32 32v96c17.7 0 32 14.3 32 32v96c0 17.7-14.3 32-32 32H416V352H384V224H352V128H320v96h32V352h32V512H304V464c0-26.5-21.5-48-48-48s-48 21.5-48 48v48H128V352h32V224h32V128H160v96H128V352H96V512H32c-17.7 0-32-14.3-32-32V384c0-17.7 14.3-32 32-32V256c0-17.7 14.3-32 32-32V160c0-17.7 14.3-32 32-32V64 32 24c0-13.3 10.7-24 24-24zM256 272c-17.7 0-32 14.3-32 32v48h64V304c0-17.7-14.3-32-32-32zm-32-80v32h64V192c0-17.7-14.3-32-32-32s-32 14.3-32 32z"
+                  ></path></svg
+                >
+              </div>
+              Merge using a template
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              You can reuse an existing document as a template for your newly
+              merged document. <br /><br /> This copies over formatting like headers
+              and footers, along with access settings and document language, so your
+              newly merged document matches the template.
+            </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                
+                <svg class="h-5 w-5 text-white"
+                viewBox="0 0 640 512"
+                width="20"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M48 448V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1s-19.9 17.2-16.1 29.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg>
+              </div>
+              Merge Any File type
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              You can combine content from various sources stored in your Google Drive.
+              This includes plain text files, Markdown, HTML, ODT, RTF,
+              and Microsoft Word documents.
+              <br /><br />
+              This empowers you to break free from expensive server-based tools.
+              Mix and match content from different platforms, create unified deliverables,
+              and export the final product in various formats, including PDF and
+              ePub. This opens doors for flexible document management and collaboration.
+            </dd>
+          </div>
+          <!--     <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+               <svg  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"/></svg>
+              </div>
+              Redundancy Deduction(coming soon)
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+             Finds the redundant content between the merged document
+            </dd>
+          </div>-->
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                  ></path></svg
+                >
+              </div>
+              Automatic Summary Generation
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              You can generate a summary of each document before merging to
+              provide a quick overview of the content. <br /><br /> A summary acts
+              like a mini-map, giving the reader a quick idea of what's ahead: key
+              points, main events, or the chapter's overall purpose. It helps the
+              user dive right in or refresh the memory before starting a new section.
+            </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"
+                  ></path></svg
+                >
+              </div>
+              Automatic Glossary Generation
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              You can create a glossary of complex terms used throughout your
+              merged document.
+              <br /><br />
+              This is particularly valuable for book publishing, as it provides readers
+              with a quick reference for unfamiliar terminology, enhancing their
+              understanding and overall reading experience.
+            </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z"
+                  ></path></svg
+                >
+              </div>
+              Large File Mode
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Google Apps Script has a quota limit of 6 minutes for a function's
+              execution time. In normal mode, where files are processed one by
+              one, large documents might not get the full 6 minutes needed for
+              successful merging. <br /><br /> Large file mode addresses this limitation.
+              When enabled, large file mode grants each document a maximum of 6 minutes
+              for reading and merging. This ensures successful merging of even large
+              documents.
+            </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  ></path></svg
+                >
+              </div>
+              Export Merged Docs as ePub
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              The tool automatically generates an EPUB file of your merged
+              document, saving you time. <br /><br /> This format is optimized for
+              eReaders and mobile devices, offering a flexible and reflowable reading
+              experience that adjusts to different screen sizes.
+            </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
+                  ></path></svg
+                >
+              </div>
+              Export Merged Docs as PDF
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              The tool automatically generates a PDF version of your merged
+              document, ready for professional printing or sharing a polished
+              final version. It preserves the exact layout and formatting of
+              your original documents.
+            </dd>
+          </div>
+
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"
+                  ></path></svg
+                >
+              </div>
+              Auto Download Output
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              The tool automatically downloads your merged document in both PDF
+              and EPUB formats, making it easy to share with collaborators or
+              publish your work.
+            </dd>
+          </div>
+          <div class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div
+                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
+              >
+                <svg
+                  class="h-5 w-5 text-white"
+                  viewBox="0 0 640 512"
+                  width="20"
+                  height="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                    fill="#ffffff"
+                    d="M398.3 3.4c-15.8-7.9-35-1.5-42.9 14.3c-7.9 15.8-1.5 34.9 14.2 42.9l.4 .2c.4 .2 1.1 .6 2.1 1.2c2 1.2 5 3 8.7 5.6c7.5 5.2 17.6 13.2 27.7 24.2C428.5 113.4 448 146 448 192c0 17.7 14.3 32 32 32s32-14.3 32-32c0-66-28.5-113.4-56.5-143.7C441.6 33.2 427.7 22.2 417.3 15c-5.3-3.7-9.7-6.4-13-8.3c-1.6-1-3-1.7-4-2.2c-.5-.3-.9-.5-1.2-.7l-.4-.2-.2-.1-.1 0 0 0c0 0 0 0-14.3 28.6L398.3 3.4zM128.7 227.5c6.2-56 53.7-99.5 111.3-99.5c61.9 0 112 50.1 112 112c0 29.3-11.2 55.9-29.6 75.9c-17 18.4-34.4 45.1-34.4 78V400c0 26.5-21.5 48-48 48c-17.7 0-32 14.3-32 32s14.3 32 32 32c61.9 0 112-50.1 112-112v-6.1c0-9.8 5.4-21.7 17.4-34.7C398.3 327.9 416 286 416 240c0-97.2-78.8-176-176-176C149.4 64 74.8 132.5 65.1 220.5c-1.9 17.6 10.7 33.4 28.3 35.3s33.4-10.7 35.3-28.3zM32 512a32 32 0 1 0 0-64 32 32 0 1 0 0 64zM192 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3l64 64c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-64-64c-12.5-12.5-32.8-12.5-45.3 0zM208 240c0-17.7 14.3-32 32-32s32 14.3 32 32c0 13.3 10.7 24 24 24s24-10.7 24-24c0-44.2-35.8-80-80-80s-80 35.8-80 80c0 13.3 10.7 24 24 24s24-10.7 24-24z"
+                  ></path></svg
+                >
+              </div>
+              We listen to our users
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">
+              Missing a Feature? We Want to Hear From You! Do you have ideas to
+              improve your document merging workflow?
+              <a
+                href="https://www.mergedocs.pro/contact-us"
+                style="color: blue;">Share your feedback with us</a
+              > - we're always looking for ways to make the tool even better.
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Frequently Asked Questions"
+    subtitle=""
+    tagline="FAQs"
+    classes={{ container: "max-w-6xl" }}
+    items={[
+      {
+        title: "Why Merge Docs Pro?",
+        description:
+          "Merge Docs Pro is an add-on that helps to merge multiple Google Docs into One and also exports the document as pdf.",
+      },
+      {
+        title: "Do i need to login to any other portal to use Merge Docs Pro?",
+        description:
+          "No, you can use the add on from the extensions menu. No need to login to a separate portal.",
+      },
+      {
+        title: "What do I need to start?",
+        description:
+          'Install the <a style="color:#2772ed;" href=https://workspace.google.com/marketplace/app/docs_to_markdown_pro/483386994804?utm_source=docstomarkdown.pro&utm_medium=app_home_faq&utm_id=app_home">Merge Docs Pro</a> add on from the Google Workspace Marketplace, start converting. Its that easy.',
+      },
+    ]}
+  />
+</Layout>

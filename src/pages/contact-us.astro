@@ -1,0 +1,67 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+  description: "contact page for the Merge Docs pro add on"
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="" title="Let's Connect!" />
+  <iframe
+  aria-label="Contact Us"
+  frameborder="0"
+  style="height:900px;width:99%;border:none;"
+  src="https://forms.zohopublic.in/vikram3/form/ContactUs/formperma/YEvySMOBqLK3XSr2ASWtsmem3SUuMHbbHwuO6YoRWO4"
+  scrolling="no"
+></iframe>
+ <!-- <ContactUs
+    id="form"
+    title="Drop us a message today!"
+    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Name',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+    ]}
+    textarea={{
+      label: 'Message',
+    }}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
+    description="Our support team typically responds within 24 business hours."
+  />-->
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+  title="We are here to help!"
+  items={[
+    {
+      title: 'Email',
+      description: 'vikram@docstomarkdown.pro',
+      icon: 'tabler:mail',
+    },
+    {
+      title: 'Location',
+      description: 'Forge.Factory, KCT Tech park, Saravanampatti, Coimbatore - 641 049, India.',
+      icon: 'tabler:map-pin',
+    },
+  ]}
+/>
+</Layout>

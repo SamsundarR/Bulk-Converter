@@ -1,0 +1,21 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'About Merge Docs Pro',
+  description: "Abount Page for the Merge Docs Pro add on"
+};
+---
+
+<Layout metadata={metadata}>
+    <HeroText tagline="" title="About Docs to Markdown Pro" />
+<div style="padding-top:10px; padding-left:100px;padding-right:100px;" class="flex items-stretch justify-center">
+Google Docs To Markdown converter is an add-on that allows you to convert the Google Docs content into a Markdown format.
+
+It also helps you publish the content directly to GitHub or GitLab in your Docs-as-Code approach.
+<br><br>
+Vikram, a seasoned technical writer, leveraged his expertise to develop this tool, ensuring it meets the need for efficient content creation, clear documentation formatting, and seamless collaboration.
+</div></Layout>
