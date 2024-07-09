@@ -1,32 +1,32 @@
 ---
 title: "Privacy Policy"
 layout: "~/layouts/MarkdownLayout.astro"
-excerpt: "Privacy policy of the Merge Docs Pro Add on"
+excerpt: "Privacy policy of the Bulk Converter Pro Add on"
 ---
 
 _Last updated_: January 06, 2024
 
 ## Who we are
 
-Our website address is: https://www.mergedocs.pro.
+Our website address is: https://www.bulkconverter.pro.
 
-At Merge Docs Pro (“We”, “Us”, “Our”), we respect the client’s (“You”, “Your” or “User”) privacy and protect it seriously. The use of information collected through our service shall be limited to the purpose of providing the service for which our Clients have engaged us.
+At Bulk Converter Pro (“We”, “Us”, “Our”), we respect the client’s (“You”, “Your” or “User”) privacy and protect it seriously. The use of information collected through our service shall be limited to the purpose of providing the service for which our Clients have engaged us.
 
 ## Limited Use Requirements
 
-Merge Docs Pro respects your privacy and only obtain, use the minimum necessary information from Google APIs to provide our services. Merge Docs Pro use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
+Bulk Converter Pro respects your privacy and only obtain, use the minimum necessary information from Google APIs to provide our services. Bulk Converter Pro use and transfer to any other app of information received from Google APIs will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements.
 
 ## Google OAuth Permissions Overview
 
 We request specific permissions through Google OAuth to enable the app’s functionality, as explained against each permission stated below:
 
 - **See, edit, create, and delete only the specific Google Drive files you use with this app** – To upload the converted Markdown to your Google Drive for your later reference.
-- **See, edit, create and delete all your Google Docs documents** – To read the content of Google Docs and convert it into Markdown or HTML format. Also to read the contents of the documents that you have added as a Snippets in the Snippets Library.
+
 - **Connect to an external service** – To connect to a Cloud function and upload images to AWS S3 to generate an image URL for use in Markdown.
 Display and run third-party web content in prompts and sidebars inside Google applications – To display the add-on as a right sidebar that provides the option to convert the document content to Markdown.
 - **Allow this application to run when you are not present** – This permission is a requirement for the OAuth token generation, which is essential for enabling the Google Picker API. The Google Picker allows you to select Google Docs that you’d like to add to your snippet library.
 
-Furthermore, in addition to the above functionality, we also retrieve the current user’s email ID. This is essential for purposes such as storing Merge Docs Pro license key validation on a per-user basis, tracking our service usage per individual user.
+Furthermore, in addition to the above functionality, we also retrieve the current user’s email ID. This is essential for purposes such as storing Bulk Converter Pro license key validation on a per-user basis, tracking our service usage per individual user.
 
 ## What information do we collect?
 
@@ -66,7 +66,7 @@ You can opt out of the auto image caption generator at any time. To do this, go 
 - **You can delete or deactivate your account.** If your personal information changes, or if you no longer desire our service, you can delete or deactivate your account. You can do this by uninstalling our Google add-on and by contacting us to remove the usage log data available with us. We will respond to your request within 5 business days.
 - **We may disclose your personal information as required by law.** We may disclose your personal information as required by law, such as to comply with a subpoena, bankruptcy proceedings, or similar legal process. We may also disclose your personal information if we believe that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or comply with a judicial proceeding, court order, or legal process served on our website.
 
-For any other queries, contact us at vikram@mergedocs.pro
+For any other queries, contact us at vikram@bulkconverter.pro
 
 ## Comments in Blog Posts
 

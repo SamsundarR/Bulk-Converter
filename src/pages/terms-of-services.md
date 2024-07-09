@@ -2,16 +2,16 @@
 title: 'Terms and Conditions'
 slug: terms-of-services
 layout: '~/layouts/MarkdownLayout.astro'
-excerpt: "Terms of services of the Merge Docs Pro Add on"
+excerpt: "Terms of services of the Bulk Converter Pro Add on"
 ---
 
 _Last updated_: January 06, 2024
 
 - **We take steps to protect your personal information.** We use industry-standard security measures to protect your personal information from unauthorized access, alteration, or destruction. We also follow generally accepted industry standards to maintain data accuracy and help ensure the appropriate use of your personal information.
 
-- **We do not target children.** Merge Docs Pro does not target its offerings toward and does not knowingly collect any personal information from, users under 13 years of age.
+- **We do not target children.** Bulk Converter Pro does not target its offerings toward and does not knowingly collect any personal information from, users under 13 years of age.
 
-- **We will notify you if we go through a business transition.** If Merge Docs Pro goes through a business transition, such as a merger, acquisition, or sale, your personal information may be transferred to the new owner. You will be notified via email of any such change in ownership or control of your personal information.
+- **We will notify you if we go through a business transition.** If Bulk Converter Pro goes through a business transition, such as a merger, acquisition, or sale, your personal information may be transferred to the new owner. You will be notified via email of any such change in ownership or control of your personal information.
 
 ## Our Warranties and Disclaimers
 
