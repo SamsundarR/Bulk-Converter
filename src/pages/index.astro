@@ -3,13 +3,12 @@ import Layout from "~/layouts/PageLayout.astro";
 
 import FAQs from "~/components/widgets/FAQs.astro";
 
-import MergeDocsHero from "../components/landing/MergeDocsHero.astro";
-import GCPPartnerSection from "~/components/common/GCPPartnerSection.astro";
+import BulkConverterHero from "../components/landing/BulkConverterHero.astro";
 
 const metadata = {
-  title: "Merge Google Docs",
+  title: "Bulk Converter Pro",
   ignoreTitleTemplate: true,
-  description: "Merge Google Docs, Merge Multiple Google Docs into One",
+  description: "Bulk Converter Pro",
 };
 ---
 
@@ -20,7 +19,7 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-  <MergeDocsHero />
+  <BulkConverterHero />
 
   <div class="bg-white py-24 sm:py-32" style="width:100%">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -31,10 +30,10 @@ const metadata = {
         <p
           class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
-          Everything you need to Merge Multiple Google Docs, powered by Gemini
+          Everything you need to Convert files from One Type to Other
         </p>
         <p class="mt-6 text-lg leading-8 text-gray-600">
-          Write modularly, merge like a Pro
+          Convert from one type to another
         </p>
       </div>
 
@@ -65,33 +64,7 @@ const metadata = {
               entirely within your Google account, ensuring your data privacy.
             </dd>
           </div>
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
-              >
-                <svg
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 640 512"
-                  width="20"
-                  height="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  ><path
-                    fill="#ffffff"
-                    d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64c-35.3 0-64 28.7-64 64H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64v56H24c-13.3 0-24 10.7-24 24s10.7 24 24 24H64c0 35.3 28.7 64 64 64v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448h56v40c0 13.3 10.7 24 24 24s24-10.7 24-24V448c35.3 0 64-28.7 64-64h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V280h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448V176h40c13.3 0 24-10.7 24-24s-10.7-24-24-24H448c0-35.3-28.7-64-64-64V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H280V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H176V24zM160 128H352c17.7 0 32 14.3 32 32V352c0 17.7-14.3 32-32 32H160c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32zm192 32H160V352H352V160z"
-                  ></path></svg
-                >
-              </div>
-              Gemini Powered
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              The app is integrated with Gemini. The possiblities are endless
-              with Gemini. <br /><br />Use a Gemini prompt to automatically
-              generate content for missing chapters/documents, alongside merging
-              your existing Google Docs. This ensures a complete document even
-              if some sections/documents are unavailable.
-            </dd>
-          </div>
+          
           <div class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div
@@ -110,13 +83,12 @@ const metadata = {
                   ></path></svg
                 >
               </div>
-              Merge using a template
+              Convert using a template
             </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">
               You can reuse an existing document as a template for your newly
-              merged document. <br /><br /> This copies over formatting like headers
-              and footers, along with access settings and document language, so your
-              newly merged document matches the template.
+              Convert document. <br /><br /> This copies over access settings to the
+              newly converted documents.
             </dd>
           </div>
 
@@ -132,96 +104,20 @@ const metadata = {
                 height="16"
                 xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M48 448V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm55 241.1c-3.8-12.7-17.2-19.9-29.9-16.1s-19.9 17.2-16.1 29.9l48 160c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l25-83.4 25 83.4c3 10.2 12.4 17.1 23 17.1s19.9-7 23-17.1l48-160c3.8-12.7-3.4-26.1-16.1-29.9s-26.1 3.4-29.9 16.1l-25 83.4-25-83.4c-3-10.2-12.4-17.1-23-17.1s-19.9 7-23 17.1l-25 83.4-25-83.4z"/></svg>
               </div>
-              Merge Any File type
+              Convert Any File type
             </dt>
             <dd class="mt-2 text-base leading-7 text-gray-600">
-              You can combine content from various sources stored in your Google Drive.
+              You can convert any file type stored in your Google Drive.
               This includes plain text files, Markdown, HTML, ODT, RTF,
               and Microsoft Word documents.
               <br /><br />
               This empowers you to break free from expensive server-based tools.
               Mix and match content from different platforms, create unified deliverables,
-              and export the final product in various formats, including PDF and
-              ePub. This opens doors for flexible document management and collaboration.
+              and export the final product in various formats.
             </dd>
           </div>
-          <!--     <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
-              >
-               <svg  class="h-5 w-5 text-white"
-                  viewBox="0 0 640 512"
-                  width="20"
-                  height="16"
-                  xmlns="http://www.w3.org/2000/svg"><path fill="#ffffff" d="M64 464H288c8.8 0 16-7.2 16-16V384h48v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h64v48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16zM224 304H448c8.8 0 16-7.2 16-16V64c0-8.8-7.2-16-16-16H224c-8.8 0-16 7.2-16 16V288c0 8.8 7.2 16 16 16zm-64-16V64c0-35.3 28.7-64 64-64H448c35.3 0 64 28.7 64 64V288c0 35.3-28.7 64-64 64H224c-35.3 0-64-28.7-64-64z"/></svg>
-              </div>
-              Redundancy Deduction(coming soon)
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-             Finds the redundant content between the merged document
-            </dd>
-          </div>-->
-
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
-              >
-                <svg
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 640 512"
-                  width="20"
-                  height="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  >
-                  <path
-                    fill="#ffffff"
-                    d="M288 64c0 17.7-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32H256c17.7 0 32 14.3 32 32zm0 256c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c17.7 0 32 14.3 32 32zM0 192c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 448c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                  ></path></svg
-                >
-              </div>
-              Automatic Summary Generation
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              You can generate a summary of each document before merging to
-              provide a quick overview of the content. <br /><br /> A summary acts
-              like a mini-map, giving the reader a quick idea of what's ahead: key
-              points, main events, or the chapter's overall purpose. It helps the
-              user dive right in or refresh the memory before starting a new section.
-            </dd>
-          </div>
-
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
-              >
-                <svg
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 640 512"
-                  width="20"
-                  height="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  >
-                  <path
-                    fill="#ffffff"
-                    d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"
-                  ></path></svg
-                >
-              </div>
-              Automatic Glossary Generation
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              You can create a glossary of complex terms used throughout your
-              merged document.
-              <br /><br />
-              This is particularly valuable for book publishing, as it provides readers
-              with a quick reference for unfamiliar terminology, enhancing their
-              understanding and overall reading experience.
-            </dd>
-          </div>
-
+          
+          
           <div class="relative pl-16">
             <dt class="text-base font-semibold leading-7 text-gray-900">
               <div
@@ -250,62 +146,6 @@ const metadata = {
               When enabled, large file mode grants each document a maximum of 6 minutes
               for reading and merging. This ensures successful merging of even large
               documents.
-            </dd>
-          </div>
-
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
-              >
-                <svg
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 640 512"
-                  width="20"
-                  height="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  >
-                  <path
-                    fill="#ffffff"
-                    d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
-                  ></path></svg
-                >
-              </div>
-              Export Merged Docs as ePub
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              The tool automatically generates an EPUB file of your merged
-              document, saving you time. <br /><br /> This format is optimized for
-              eReaders and mobile devices, offering a flexible and reflowable reading
-              experience that adjusts to different screen sizes.
-            </dd>
-          </div>
-
-          <div class="relative pl-16">
-            <dt class="text-base font-semibold leading-7 text-gray-900">
-              <div
-                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600"
-              >
-                <svg
-                  class="h-5 w-5 text-white"
-                  viewBox="0 0 640 512"
-                  width="20"
-                  height="16"
-                  xmlns="http://www.w3.org/2000/svg"
-                  >
-                  <path
-                    fill="#ffffff"
-                    d="M64 464l48 0 0 48-48 0c-35.3 0-64-28.7-64-64L0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 304l-48 0 0-144-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16zM176 352l32 0c30.9 0 56 25.1 56 56s-25.1 56-56 56l-16 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-48 0-80c0-8.8 7.2-16 16-16zm32 80c13.3 0 24-10.7 24-24s-10.7-24-24-24l-16 0 0 48 16 0zm96-80l32 0c26.5 0 48 21.5 48 48l0 64c0 26.5-21.5 48-48 48l-32 0c-8.8 0-16-7.2-16-16l0-128c0-8.8 7.2-16 16-16zm32 128c8.8 0 16-7.2 16-16l0-64c0-8.8-7.2-16-16-16l-16 0 0 96 16 0zm80-112c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 48c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64 0-64z"
-                  ></path></svg
-                >
-              </div>
-              Export Merged Docs as PDF
-            </dt>
-            <dd class="mt-2 text-base leading-7 text-gray-600">
-              The tool automatically generates a PDF version of your merged
-              document, ready for professional printing or sharing a polished
-              final version. It preserves the exact layout and formatting of
-              your original documents.
             </dd>
           </div>
 
@@ -377,19 +217,19 @@ const metadata = {
     classes={{ container: "max-w-6xl" }}
     items={[
       {
-        title: "Why Merge Docs Pro?",
+        title: "Why Bulk Converter Pro?",
         description:
-          "Merge Docs Pro is an add-on that helps to merge multiple Google Docs into One and also exports the document as pdf.",
+          "Bulk Convert Pro is an add-on that helps to Convert multiple files into another format seamlessly.",
       },
       {
-        title: "Do i need to login to any other portal to use Merge Docs Pro?",
+        title: "Do i need to login to any other portal to use Bulk Converter Pro?",
         description:
           "No, you can use the add on from the extensions menu. No need to login to a separate portal.",
       },
       {
         title: "What do I need to start?",
         description:
-          'Install the <a style="color:#2772ed;" href=https://workspace.google.com/marketplace/app/docs_to_markdown_pro/483386994804?utm_source=docstomarkdown.pro&utm_medium=app_home_faq&utm_id=app_home">Merge Docs Pro</a> add on from the Google Workspace Marketplace, start converting. Its that easy.',
+          'Install the <a style="color:#2772ed;" href=https://workspace.google.com/marketplace/app/docs_to_markdown_pro/483386994804?utm_source=docstomarkdown.pro&utm_medium=app_home_faq&utm_id=app_home">Bulk Converter Pro</a> add on from the Google Workspace Marketplace, start converting. Its that easy.',
       },
     ]}
   />

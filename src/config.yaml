@@ -1,24 +1,24 @@
 site:
-  name: Merge Docs Pro
-  site: 'https://www.mergedocs.pro'
+  name: Bulk Converter Pro
+  site: 'https://www.bulkconverter.pro'
   base: '/'
   ## Do not change the trailslash to False. Because, the previous wordpress site had the ending slash and all the URLS indexed in Google were including slash. 
   ## Astro sites doesn't automatically redirect the urls without trailslash to with trail slash.. If changed to false, then the urls will show 404
-  trailingSlash: true
+  trailingSlash: false
 
   googleSiteVerificationId: 
 
 # Default SEO metadata
 metadata:
   title:
-    default: Merge Google Docs
+    default: Bulk Convert files
     template: '%s'
-  description: "Merge Google Docs, Merge Multiple Google Docs into One"
+  description: "Convert Word to HTML, HTML to Word, Google Docs to Word, Word to Google Docs"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Merge Docs Pro
+    site_name: Bulk Converter Pro
     images:
       - url: '~/assets/images/default.png'
         width: 1200
