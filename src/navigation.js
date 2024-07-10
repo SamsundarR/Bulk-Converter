@@ -9,7 +9,7 @@ export const headerData = {
     },
     {
         text: 'Docs',
-        href: "https://docs.mergedocs.pro",
+        href: "https://docs.bulkconveter.pro",
       },
     {
       text: 'Pages',
