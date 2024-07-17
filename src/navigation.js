@@ -37,7 +37,7 @@ export const headerData = {
       },
    
   ],
-  actions: [{ text: 'Install Free Add-on', href: 'https://workspace.google.com/marketplace/app/merge_docs_pro/61337277026', target: '_blank' }],
+  actions: [{ text: 'Install Free Add-on', href: 'https://workspace.google.com/marketplace/app/bulk_converter_pro/327730061402', target: '_blank' }],
 };
 
 export const footerData = {
