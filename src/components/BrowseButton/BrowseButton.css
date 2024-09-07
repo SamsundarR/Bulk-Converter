@@ -1,0 +1,26 @@
+.browse {
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .browse:hover {
+    color: #000000;
+  }
+  
+  .browse::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: width 0.3s ease;
+  }
+  
+  .browse:hover::after {
+    width: 100%;
+  }
+  

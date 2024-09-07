@@ -1,0 +1,14 @@
+.drag-and-drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 2; /* Higher than the existing content to capture drops */
+    cursor: pointer;
+  }
+  
+  .drag-and-drop.dragging {
+    background-color: rgba(0, 0, 0, 0.05); /* Slight overlay to indicate dragging state */
+  }

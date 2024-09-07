@@ -1,0 +1,11 @@
+import TextFileToTextFile from '../components/TextFile to File/TextFiletoTextFile'; // Ensure correct path
+import { wordToHtmlLogic } from '../components/word-to-html'; // Import from .jsx file
+import StyledHeader from '../components/StyledHeader';
+
+<StyledHeader>Convert Word to HTML Online</StyledHeader>
+
+<p style={{ color: '#2772ed', fontSize: '1rem', marginBottom: '20px' }}>
+  You can use this tool to convert Word to HTML online for free.
+</p>
+
+<TextFileToTextFile inputFileType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document" fileType="html" client:load />
